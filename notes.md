@@ -111,7 +111,7 @@ id      title      year     language        run_time
 
 `http_request for adding new movie`
 
-url: localhost:/8000/movie/ 
+url: localhost:/8000/movies/ 
 
 method: POST 
 
@@ -126,19 +126,19 @@ body: {
 
 `http_request for list all movie` 
 
-url: localhost:8000/movie/ 
+url: localhost:8000/movies/ 
 method: GET 
 
 
 `http_request for fetching movie detail` 
 
-url: localhost:8000/movie/1/ 
+url: localhost:8000/movies/1/ 
 
 method: GET 
 
 `http_request for update movie` 
 
-url: localhost:8000/movie/1/ 
+url: localhost:8000/movies/1/ 
 
 method: PUT 
 
@@ -153,7 +153,7 @@ body: {
 
 `http_request for delete movie` 
 
-url: localhost:8000/movie/5/ 
+url: localhost:8000/movies/5/ 
 
 method:DELETE 
 
@@ -163,7 +163,7 @@ method:DELETE
 ### HOSPITAL task 
 
 ```
-HOAPITAL 
+PATIENTS 
 
 id    name             age    gender    disease          doctor 
 
@@ -180,7 +180,7 @@ id    name             age    gender    disease          doctor
 
 `http_request for adding new patient` 
 
-url: localhost:/8000/hospital/ 
+url: localhost:/8000/patients/ 
 
 method: POST 
 
@@ -196,20 +196,20 @@ body: {
 
 `http_request for list all patients` 
 
-url: localhost:8000/hospital/ 
+url: localhost:8000/patients/ 
 
 method: GET 
 
 
 `http_request for fetching specific patient` 
 
-url: localhost:8000/hospital/3/ 
+url: localhost:8000/patients/3/ 
 
 method: GET 
 
 `http_request for update patient data` 
 
-url: localhost:8000/hospital/3/ 
+url: localhost:8000/patients/3/ 
 
 method: PUT 
 
@@ -225,6 +225,6 @@ body: {
 
 `http_request for delete patient` 
 
-url: localhost:8000/hospital/5/ 
+url: localhost:8000/patients/5/ 
 
 method:DELETE 
