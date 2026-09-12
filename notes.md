@@ -112,12 +112,16 @@ id      title      year     language        run_time
 `http_request for adding new movie`
 
 url: localhost:/8000/movie/ 
+
 method: POST 
+
 body: { 
+
     "title":"bahubali", 
     "year":2015, 
     "language":"kannada", 
     "run_time":175 
+    
 } 
 
 `http_request for list all movie` 
