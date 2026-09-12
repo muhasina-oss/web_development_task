@@ -111,99 +111,99 @@ id      title      year     language        run_time
 
 `http_request for adding new movie`
 
-url: localhost:/8000/movie/
-method: POST
-body: {
-    "title":"bahubali",
-    "year":2015,
-    "language":"kannada",
-    "run_time":175
+url: localhost:/8000/movie/ 
+method: POST 
+body: { 
+    "title":"bahubali", 
+    "year":2015, 
+    "language":"kannada", 
+    "run_time":175 
+} 
+
+`http_request for list all movie` 
+
+url: localhost:8000/movie/ 
+method: GET 
+
+
+`http_request for fetching movie detail` 
+
+url: localhost:8000/movie/1/ 
+method: GET 
+
+`http_request for update movie` 
+
+url: localhost:8000/movie/1/ 
+method: PUT 
+body: { 
+    "title":"KGF cahpter 1", 
+    "year":2019, 
+    "language":"kannada", 
+    "run_time":160  
 }
 
-`http_request for list all movie`
+`http_request for delete movie` 
 
-url: localhost:8000/movie/
-method: GET
+url: localhost:8000/movie/5/ 
+method:DELETE 
 
-
-`http_request for fetching movie detail`
-
-url: localhost:8000/movie/1/
-method: GET
-
-`http_request for update movie`
-
-url: localhost:8000/movie/1/
-method: PUT
-body: {
-    "title":"KGF cahpter 1",
-    "year":2019,
-    "language":"kannada",
-    "run_time":160
-}
-
-`http_request for delete movie`
-
-url: localhost:8000/movie/5/
-method:DELETE
-
--------
+------- 
 
 
-### HOSPITAL task
+### HOSPITAL task 
 
 ```
-HOAPITAL
+HOAPITAL 
 
-id    name             age    gender    disease          doctor
+id    name             age    gender    disease          doctor 
 
-1     Rahul            25     Male      Fever            Dr. Arun
+1     Rahul            25     Male      Fever            Dr. Arun 
 
-2     Anjali           32     Female    Diabetes         Dr. Meera
+2     Anjali           32     Female    Diabetes         Dr. Meera 
 
-3     Amal             45     Male      Heart Disease    Dr. Thomas
+3     Amal             45     Male      Heart Disease    Dr. Thomas 
 
-4     Fathima          28     Female    Asthma           Dr. Sara
+4     Fathima          28     Female    Asthma           Dr. Sara 
 
-5     Vishnu           60     Male      Blood Pressure   Dr. Arun
+5     Vishnu           60     Male      Blood Pressure   Dr. Arun 
 ```
 
-`http_request for adding new patient`
+`http_request for adding new patient` 
 
-url: localhost:/8000/hospital/
-method: POST
-body: {
-    "name":"sona",
-    "age":21,
-    "gender":"female",
-    "disease":"Migrane",
-    "doctor":"Dr. Arun"
+url: localhost:/8000/hospital/ 
+method: POST 
+body: { 
+    "name":"sona", 
+    "age":21, 
+    "gender":"female", 
+    "disease":"Migrane", 
+    "doctor":"Dr. Arun" 
+}  
+
+`http_request for list all patients` 
+
+url: localhost:8000/hospital/ 
+method: GET 
+
+
+`http_request for fetching specific patient` 
+
+url: localhost:8000/hospital/3/ 
+method: GET 
+
+`http_request for update patient data` 
+
+url: localhost:8000/hospital/3/ 
+method: PUT 
+body: { 
+    "name":"Amal", 
+    "age":45, 
+    "gender":"male", 
+    "disease":"Heart Attack", 
+    "doctor":"Dr. Sara" 
 }
 
-`http_request for list all patients`
+`http_request for delete patient` 
 
-url: localhost:8000/hospital/
-method: GET
-
-
-`http_request for fetching specific patient`
-
-url: localhost:8000/hospital/3/
-method: GET
-
-`http_request for update patient data`
-
-url: localhost:8000/hospital/3/
-method: PUT
-body: {
-    "name":"Amal",
-    "age":45,
-    "gender":"male",
-    "disease":"Heart Attack",
-    "doctor":"Dr. Sara"
-}
-
-`http_request for delete patient`
-
-url: localhost:8000/hospital/5/
-method:DELETE
+url: localhost:8000/hospital/5/ 
+method:DELETE 
